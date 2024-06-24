@@ -59,7 +59,7 @@ namespace SteamKeys
         }
         static void Main(string[] args)
         {
-            Console.Title = "This is free program! https://github.com/Parad1st/Steam-Key-Generator"; // цени чужой труд!
+            Console.Title = "SteamKeys++"; // Название окна потому что я тупой
             Random random = new Random();
             string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
             int keyLength = 15;
