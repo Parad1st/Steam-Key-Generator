@@ -1,7 +1,7 @@
 # Steam-Key-Generator
 Free steam key generator.
 
-![SteamKeys++](https://raw.githubusercontent.com/Parad1st/Steam-Key-Generator/main/resources/SteamKeys%2B%2B%20Photo.png)
+![SteamKeys++](https://raw.githubusercontent.com/Parad1st/Steam-Key-Generator/main/resources/SteamKeys%2B%2B.png)
 
 ## About the program
 
