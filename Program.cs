@@ -40,8 +40,8 @@ namespace SteamKeys
             catch (Exception)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Возникло исключение!");
-                Console.WriteLine("Введите корректные значения для задач");
+                Console.WriteLine("Exception!");
+                Console.WriteLine("Enter the correct values for the tasks");
             }
             Console.WriteLine();
             return numberOfKeys;
