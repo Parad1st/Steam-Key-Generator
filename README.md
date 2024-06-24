@@ -1,11 +1,11 @@
 # Steam-Key-Generator
-Бесплатный генератор ключей стим.
+Free steam key generator.
 
 ![SteamKeys++](https://raw.githubusercontent.com/Parad1st/Steam-Key-Generator/main/resources/SteamKeys%2B%2B%20Photo.png)
 
-## О программе
+## About the program
 
-Данная программа написанна на  C#, всё что она делает это генерирует коды для стима, которые возможно сработают!
+This program is written in C#, all it does is generate steam codes that will probably work!
 
-## Коды не сработали, почему?
-Потому сто это генератор, он генерирует рандомные ключи, и шансов что ключ совпадет не много. Так работают все генераторы ключей.
+## Codes didn't work, why?
+Because this is a generator, it generates random keys, and there is not much chance that the key will match. This is how all key generators work.
