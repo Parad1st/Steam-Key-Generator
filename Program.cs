@@ -1,5 +1,5 @@
- namespace SteamKeys
- {
+namespace SteamKeys
+{
     internal class Program
     {
         private static Random random = new Random();
@@ -14,7 +14,7 @@
 
             EscreverOutput(fileName);
         }
-        private static int InputQuantidade() // Изменяет интерфейс консоли и считывает количество ключей, которые вы хотите получить
+        private static uint InputQuantidade() // Изменяет интерфейс консоли и считывает количество ключей, которые вы хотите получить
         {
             string title = @"
 
@@ -31,11 +31,22 @@
             Console.WriteLine(title, Console.ForegroundColor = ConsoleColor.Cyan);
             Console.WriteLine();
             Console.Write("Insert how many keys you want to generate: ", Console.ForegroundColor = ConsoleColor.White);
-            int numberOfKeys = Convert.ToInt32(Console.ReadLine()); // Считывание числа 
+            uint numberOfKeys = 0;
+            try
+            {
+                numberOfKeys = Convert.ToUInt32(Console.ReadLine()); // Считывание числа 
+                if (numberOfKeys < 1) { throw new Exception(); }
+            }
+            catch (Exception)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Возникло исключение!");
+                Console.WriteLine("Введите корректные значения для задач");
+            }
             Console.WriteLine();
             return numberOfKeys;
         }
-        private static void KeyGenerator(string chars, int keyLength, int numberOfKeys, string fileName) // Генерирует ключи
+        private static void KeyGenerator(string chars, int keyLength, uint numberOfKeys, string fileName) // Генерирует ключи
         {
             StreamWriter writer = new StreamWriter(fileName, false); // Объект класса StreamWriter. Реализует запись ключей в текстовый файл
             for (int i = 0; i < numberOfKeys; i++)
@@ -57,7 +68,7 @@
         {
             Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Keys saved to file: " + fileName); 
+            Console.WriteLine("Keys saved to file: " + fileName);
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Press ENTER to exit");
             Console.ResetColor();
