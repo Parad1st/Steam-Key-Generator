@@ -9,3 +9,6 @@ This program is written in C#, all it does is generate steam codes that will pro
 
 ## Codes didn't work, why?
 Because this is a generator, it generates random keys, and there is not much chance that the key will match. This is how all key generators work.
+
+## Source code
+You can create a Fork of this repository and change its code.
