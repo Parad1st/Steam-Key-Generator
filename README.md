@@ -12,3 +12,4 @@ Because this is a generator, it generates random keys, and there is not much cha
 
 ## Source code
 You can create a Fork of this repository and change its code.
+Appreciate other people's work!
